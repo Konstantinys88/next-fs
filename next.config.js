@@ -2,7 +2,7 @@
 
 const nextConfig = {
 	images: {
-		domains:['avatars.mds.yandex.net']
+		domains:['img.freepik.com']
 	}
 }
 
