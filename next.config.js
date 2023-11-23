@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {}
+const nextConfig = {
+	images: {
+		domains:['avatars.mds.yandex.net']
+	}
+}
 
 const path = require('path')
 module.exports = {
