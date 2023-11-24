@@ -5,9 +5,7 @@ import { ThemeContext } from '../context/ThemeContext';
 
 const ThemeModTogle = () => {
 
-    // const mode = 'dark';
     const { modeToggle, mode } = useContext(ThemeContext)
-
 
     return (
         <div className={styles.container} onClick={modeToggle}>
