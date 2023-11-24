@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import styles from './page.module.scss'
+import ThemeModTogle from '../themeModTogle/ThemeModTogle';
 
 
 
@@ -45,6 +46,7 @@ const Navbar = () => {
         <nav className={styles.container}>
             <Link href={'/'} className={styles.logo}>This is the future</Link>
             <div className={styles.links}>
+                <ThemeModTogle />
                 {links.map((link) => (
                     <Link key={link.id} href={link.url}>{link.title}</Link>
                 ))}
