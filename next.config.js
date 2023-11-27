@@ -2,7 +2,7 @@
 
 const nextConfig = {
 	images: {
-		domains:['img.freepik.com']
+		domains:['img.freepik.com', 's3.amazonaws.com']
 	}
 }
 
