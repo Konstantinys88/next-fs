@@ -12,11 +12,14 @@
 
 .title {
     font-size: 40px;
+    text-transform: uppercase;
+    padding: 15px;
 }
 
 .desc {
     font-size: 18px;
     font-weight: 300;
+    padding: 15px;
 }
 
 .author {
@@ -46,4 +49,5 @@
     font-weight: 300;
     color: #999;
     text-align: justify;
+    padding: 15px;
 }
