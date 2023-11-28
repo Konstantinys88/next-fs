@@ -19,7 +19,7 @@ const Blog = async () => {
 		<div >
 
 			{data.map((item) => {
-				console.log('Imageeee' + item.img)
+				// console.log('Imageeee' + item.img)
 				return (
 					<Link href={`blog/${item._id}`} className={styles.container} key={item._id}>
 						<div>

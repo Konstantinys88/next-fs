@@ -16,7 +16,7 @@ const getData = (category) => {
 
 
 const Category = ({ params }) => {
-	console.log(params)
+	// console.log(params)
 
 	const data = getData(params.category);
 
