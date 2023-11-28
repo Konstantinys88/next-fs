@@ -52,7 +52,7 @@ const Register = () => {
 					className={styles.input}
 				/>
 				<input
-					type="password"
+					type="text"
 					placeholder="Придумайте пароль"
 					required
 					className={styles.input}
