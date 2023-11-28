@@ -1,15 +1,44 @@
-import NextAuth from "next-auth"
-import GoogleProvider from "next-auth/providers/google"
-require('dotenv').config()
+import NextAuth from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import CredentionalsProvider from 'next-auth/providers/credentials';
+import connect from "@/utils/db";
+import User from "@/models/User";
+import bcrypt from "bcryptjs";
+
+require('dotenv').config();
 
 const handler = NextAuth({
 	providers: [
 		GoogleProvider({
 			clientId: process.env.GOOGLE_CLIENT_ID,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-			// clientId: "135522685600-kvced9ru0e7hl32thpl4agfcstlffebb.apps.googleusercontent.com",
-			// clientSecret: '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',
 		}),
+
+		CredentionalsProvider({
+			id: "credentionals",
+			name: "Credentionals",
+			async authorize(credentials) {
+				await connect();
+
+				try {
+					const user = await User.findOne({
+						email: credentials.email
+					})
+					if (user) {
+						const isPasswordCorrect = await bcrypt.compare(credentials.password, user.password);
+						if (isPasswordCorrect) {
+							return user
+						} else {
+							throw new Error("Не верные данные.");
+						}
+					} else {
+						throw new Error("Такой пользователь не зарегистрирован.");
+					}
+				} catch (error) {
+					throw new Error(error.message);
+				}
+			}
+		})
 	],
 })
 

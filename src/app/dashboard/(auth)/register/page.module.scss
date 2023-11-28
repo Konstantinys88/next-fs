@@ -35,10 +35,25 @@
     font-weight: bold;
 }
 
-.link {
-    text-align: center;
-}
 
 .title {
     text-align: center;
+}
+
+.button:hover {
+    background-color: #49b07d;
+}
+
+.or {
+    color: #bbb;
+}
+
+.link {
+    text-decoration: underline;
+    color: #7d7c7c;
+    text-align: center;
+}
+
+.link:hover {
+    color: rgb(61, 61, 61);
 }
