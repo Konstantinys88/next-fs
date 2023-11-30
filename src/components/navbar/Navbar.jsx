@@ -11,32 +11,32 @@ import ThemeModTogle from '../themeModTogle/ThemeModTogle';
 const links = [
     {
         id: 1,
-        title: "Home",
+        title: "Главная",
         url: "/",
     },
     {
         id: 2,
-        title: "Portfolio",
+        title: "Портфолио",
         url: "/portfolio",
     },
     {
         id: 3,
-        title: "Blog",
+        title: "Блог",
         url: "/blog",
     },
     {
         id: 4,
-        title: "About",
+        title: "О нас",
         url: "/about",
     },
     {
         id: 5,
-        title: "Contact",
+        title: "Контакты",
         url: "/contact",
     },
     {
         id: 6,
-        title: "Dashboard",
+        title: "Регистрация",
         url: "/dashboard",
     },
 ];
@@ -44,13 +44,13 @@ const links = [
 const Navbar = () => {
     return (
         <nav className={styles.container}>
-            <Link href={'/'} className={styles.logo}>This is the future</Link>
+            <Link href={'/'} className={styles.logo}>AI Будущего</Link>
             <div className={styles.links}>
                 <ThemeModTogle />
                 {links.map((link) => (
                     <Link key={link.id} href={link.url}>{link.title}</Link>
                 ))}
-                <button className={styles.logout} onClick={() => { console.log("logged out") }}>Logout</button>
+                <button className={styles.logout} onClick={() => { console.log("logged out") }}>Выйти</button>
             </div>
         </nav>
     )
