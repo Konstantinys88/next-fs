@@ -6,7 +6,7 @@ import Link from 'next/link'
 import styles from './page.module.scss'
 import ThemeModTogle from '../themeModTogle/ThemeModTogle';
 
-
+import { signOut, useSession } from 'next-auth/react';
 
 const links = [
     {
@@ -36,12 +36,15 @@ const links = [
     },
     {
         id: 6,
-        title: "Регистрация",
+        title: "Инструменты",
         url: "/dashboard",
     },
 ];
 
 const Navbar = () => {
+
+    const session = useSession();
+
     return (
         <nav className={styles.container}>
             <Link href={'/'} className={styles.logo}>AI Будущего</Link>
@@ -50,7 +53,10 @@ const Navbar = () => {
                 {links.map((link) => (
                     <Link key={link.id} href={link.url}>{link.title}</Link>
                 ))}
-                <button className={styles.logout} onClick={() => { console.log("logged out") }}>Выйти</button>
+
+                {session.status == 'authenticated' &&
+                    <button className={styles.logout} onClick={signOut}>Выйти</button>}
+
             </div>
         </nav>
     )

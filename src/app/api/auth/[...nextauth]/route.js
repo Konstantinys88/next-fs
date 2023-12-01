@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import CredentionalsProvider from 'next-auth/providers/credentials';
+import CredentialsProvider from "next-auth/providers/credentials";
 import connect from "@/utils/db";
 import User from "@/models/User";
 import bcrypt from "bcryptjs";
@@ -14,9 +14,9 @@ const handler = NextAuth({
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
 		}),
 
-		CredentionalsProvider({
-			id: "credentionals",
-			name: "Credentionals",
+		CredentialsProvider({
+			id: "credentials",
+			name: "Credentials",
 			async authorize(credentials) {
 				await connect();
 
@@ -35,11 +35,16 @@ const handler = NextAuth({
 						throw new Error("Такой пользователь не зарегистрирован.");
 					}
 				} catch (error) {
-					throw new Error(error.message);
+					throw new Error(err);
 				}
 			}
 		})
 	],
+
+	pages: {
+		error: "/dashboard/login",
+	}
+
 })
 
 export { handler as GET, handler as POST }
