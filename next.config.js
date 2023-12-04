@@ -2,15 +2,17 @@
 
 const nextConfig = {
 	images: {
-		domains:['img.freepik.com', 's3.amazonaws.com', 'avatars.mds.yandex.net']
+		domains: ['img.freepik.com', 's3.amazonaws.com', 'avatars.mds.yandex.net']
 	}
 }
 
 const path = require('path')
 module.exports = {
 	sassOptions: {
-	  includePaths: [path.join(__dirname, 'styles')],
+		includePaths: [path.join(__dirname, 'styles')],
 	},
-  }
+	trailingSlash: true,
+	output: 'export',
+}
 
 module.exports = nextConfig
