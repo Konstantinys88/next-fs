@@ -5,7 +5,7 @@ import Button from '@/components/button/Button';
 const Contacts = () => {
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>Let`s Keep in Touch</h2>
+			<h2 className={styles.title}>Давайте поддерживать связь</h2>
 			<div className={styles.content}>
 				<div className={styles.imgContainer}>
 					<Image
@@ -15,16 +15,16 @@ const Contacts = () => {
 						className={styles.image} />
 				</div>
 				<form className={styles.form}>
-					<input type="text" placeholder='Name' className={styles.input} />
+					<input type="text" placeholder='Имя' className={styles.input} />
 					<input type="text" placeholder='E-mail' className={styles.input} />
 					<textarea
 						className={styles.input}
-						placeholder='Message'
+						placeholder='Сообщение'
 						name=""
 						id=""
 						cols="30"
 						rows="10"></textarea>
-						<Button url={'#'} text={'Send'} />
+						<Button url={'#'} text={'Отправить'} />
 				</form>
 				
 			</div>

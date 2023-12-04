@@ -23,14 +23,14 @@ const Category = ({ params }) => {
 	return (
 
 		<div className={styles.container}>
-			<h2 className={styles.catTitle}>{params.category}</h2>
+			{/* <h2 className={styles.catTitle}>{params.category}</h2> */}
 
 			{data.map((item) => (
 				<div className={styles.item} key={item.id}>
 					<div className={styles.content}>
 						<h1 className={styles.title}>{item.title}</h1>
 						<p className={styles.desc}>{item.desc}</p>
-						<Button text="See More" url="#" />
+						<Button text="Смотреть еще" url="/portfolio" />
 					</div>
 					<div className={styles.imgContainer}>
 						<Image

@@ -29,7 +29,9 @@ const Daschboard = () => {
 		e.preventDefault();
 		const title = e.target[0].value;
 		const desc = e.target[1].value;
-		const img = e.target[2].value;
+		// const img = e.target[2].value ? e.target[2].value: "https://avatars.mds.yandex.net/i?id=2efd434bfbb6d6782f71cb5f48ce124bc4ecfb78-11032727-images-thumbs&n=13";
+
+		const img = "https://avatars.mds.yandex.net/i?id=2efd434bfbb6d6782f71cb5f48ce124bc4ecfb78-11032727-images-thumbs&n=13";
 		const content = e.target[3].value;
 
 		try {
@@ -50,6 +52,18 @@ const Daschboard = () => {
 		}
 	};
 
+	const handleDelete = async (id) => {
+		try {
+			await fetch(`/api/posts/${id}`, {
+				method: "DELETE",
+			});
+			mutate();
+		} catch (error) {
+			console.log(error)
+		}
+
+	}
+
 	if (session.status == "authenticated") {
 		return (
 			<div className={styles.container}>
@@ -67,23 +81,18 @@ const Daschboard = () => {
 									/>
 								</div>
 								<h2 className={styles.postTitle}>{post.title}</h2>
-								<span
-									className={styles.delete}
-									onClick={() => handleDelete(post._id)}
-								>
-									X
-								</span>
+								<span className={styles.delete} onClick={() => handleDelete(post._id)}>X</span>
 							</div>
 						))}
 				</div>
 
 				<form className={styles.new} onSubmit={handleSubmit}>
-					<h1>Add New Post</h1>
-					<input type="text" placeholder="Title" className={styles.input} />
-					<input type="text" placeholder="Desc" className={styles.input} />
-					<input type="text" placeholder="Image" className={styles.input} />
-					<textarea cols="30" rows="10" className={styles.textArea} />
-					<button className={styles.button}> Send</button>
+					<h1>Добавить новый пост</h1>
+					<input type="text" placeholder="Заголовок" className={styles.input} />
+					<input type="text" placeholder="Описаник" className={styles.input} />
+					<input type="text" placeholder="Картинка" className={styles.input} />
+					<textarea cols="30" rows="10" className={styles.textArea} placeholder='Текст' />
+					<button className={styles.button}>Отправить</button>
 				</form>
 			</div>
 		);
@@ -91,3 +100,10 @@ const Daschboard = () => {
 }
 
 export default Daschboard
+
+
+
+// https://avatars.mds.yandex.net/i?id=73bdc0a06d56a69d22ce32baa6f0a09cdc59106e-4568513-images-thumbs&n=13
+// https://avatars.mds.yandex.net/i?id=2efd434bfbb6d6782f71cb5f48ce124bc4ecfb78-11032727-images-thumbs&n=13
+
+// console.log('https://avatars.mds.yandex.net/i?id=73bdc0a06d56a69d22ce32baa6f0a09cdc59106e-4568513-images-thumbs&n=13')

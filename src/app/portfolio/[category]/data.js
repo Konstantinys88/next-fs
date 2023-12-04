@@ -2,22 +2,22 @@ export const items = {
 	applications: [
 		{
 			id: 1,
-			title: "Creative Portfolio",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Творческое портфолио",
+			desc: "Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Жаренные оксмокс они инициал его снова подпоясал свой коварный ее взобравшись, мир выйти она жизни коварных вопрос что запятой даже.",
 			image:
 				"/websites.jpg",
 		},
 		{
 			id: 2,
-			title: "Minimal Single Product",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Минимальный единичный продукт",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Власти это сбить жаренные точках рукопись, языкового вдали проектах? Запятой буквоград прямо он это бросил путь грамматики домах там грустный.",
 			image:
 				"/apps.jpg",
 		},
 		{
 			id: 3,
-			title: "Strong Together Charity",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Благотворительность 'Сильны вместе'",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. До реторический, от всех силуэт гор переписывается собрал себя залетают что, свое единственное лучше агентство возвращайся грустный то не над своего.",
 			image:
 				"/AI.webp",
 		}
@@ -25,22 +25,22 @@ export const items = {
 	illustrations: [
 		{
 			id: 1,
-			title: "Creative Portfolio",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Творческое портфолио",
+			desc: "Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Жаренные оксмокс они инициал его снова подпоясал свой коварный ее взобравшись, мир выйти она жизни коварных вопрос что запятой даже.",
 			image:
 				"/websites.jpg",
 		},
 		{
 			id: 2,
-			title: "Minimal Single Product",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Минимальный единичный продукт",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Власти это сбить жаренные точках рукопись, языкового вдали проектах? Запятой буквоград прямо он это бросил путь грамматики домах там грустный.",
 			image:
 				"/illustration.png",
 		},
 		{
 			id: 3,
-			title: "Strong Together Charity",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Благотворительность 'Сильны вместе'",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. До реторический, от всех силуэт гор переписывается собрал себя залетают что, свое единственное лучше агентство возвращайся грустный то не над своего.",
 			image:
 				"/apps.jpg",
 		}
@@ -48,22 +48,22 @@ export const items = {
 	websites: [
 		{
 			id: 1,
-			title: "Creative Portfolio",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Творческое портфолио",
+			desc: "Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Жаренные оксмокс они инициал его снова подпоясал свой коварный ее взобравшись, мир выйти она жизни коварных вопрос что запятой даже.",
 			image:
 				"/websites.jpg",
 		},
 		{
 			id: 2,
-			title: "Minimal Single Product",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Минимальный единичный продукт",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Власти это сбить жаренные точках рукопись, языкового вдали проектах? Запятой буквоград прямо он это бросил путь грамматики домах там грустный.",
 			image:
 				"/AI.webp",
 		},
 		{
 			id: 3,
-			title: "Strong Together Charity",
-			desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+			title: "Благотворительность 'Сильны вместе'",
+			desc: "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. До реторический, от всех силуэт гор переписывается собрал себя залетают что, свое единственное лучше агентство возвращайся грустный то не над своего.",
 			image:
 				"/apps.jpg",
 		}
